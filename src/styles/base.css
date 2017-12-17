@@ -1,0 +1,21 @@
+:global(#appCloudMirror) {
+  height: 100%;
+}
+
+:global(#appCloudMirror > div) {
+  height: 100%;
+}
+
+:global(.clearfix:after) {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+:global(.fl) {
+  float: left;
+}
+
+:global(.fr) {
+  float: right;
+}

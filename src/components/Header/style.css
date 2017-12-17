@@ -1,0 +1,18 @@
+.wrapper,
+.wrapper > div {
+  height: 56px;
+}
+
+.logo {
+  width: 200px;
+  background: var(--color-nav-dark);
+  text-align: center;
+  line-height: 56px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.header {
+  width: calc(100% - 200px);
+  border-bottom: 1px solid #E9E9E9;
+}
