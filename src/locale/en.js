@@ -6,7 +6,7 @@ const enUS = {
   purchase: 'purchase',
   'purchase.intention': 'intension',
   'purchase.store': 'store',
-  'purchase.ww': 'order',
+  'purchase.order': 'order',
   sell: 'sell',
   stock: 'stock',
   'stock.out': 'out',

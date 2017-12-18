@@ -1,3 +1,16 @@
-.wrapper {
+.wrapperApp {
   height: 100%;
+}
+
+.wrapperContent {
+  float: left;
+  width: calc(100% - 200px);
+  height: calc(100% - 56px);
+  padding: 20px;
+  background: #F5F5F5;
+}
+
+.wrapperContent > div {
+  height: 100%;
+  background: #fff;
 }

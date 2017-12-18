@@ -5,6 +5,7 @@ export function createRoutes() {
     {
       path: '/',
       component: App
+      // exact: true
     }
   ]
 }

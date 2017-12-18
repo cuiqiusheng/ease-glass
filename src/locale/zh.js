@@ -6,7 +6,7 @@ const zhCN = {
   purchase: '采购',
   'purchase.intention': '采购意向单',
   'purchase.store': '采购入库单',
-  'purchase.ww': '委外订单',
+  'purchase.order': '委外订单',
   sell: '销售',
   stock: '库存管理',
   'stock.out': '发料出库',

@@ -2,7 +2,11 @@
  * @summary 采购
  */
 import React, { Component } from 'react'
+import { Switch as RouterSwitch, Route } from 'react-router-dom'
 
+import Intention from './components/Intention'
+import Store from './components/Store'
+import Order from './components/Order'
 import style from './style.css'
 
 class Purchase extends Component {
@@ -15,7 +19,11 @@ class Purchase extends Component {
   render() {
     return (
       <div className={style.wrapper}>
-        Purchase
+        <RouterSwitch>
+          <Route path="/purchase/intention" component={Intention} exact />
+          <Route path="/purchase/store" component={Store} exact />
+          <Route path="/purchase/order" component={Order} exact />
+        </RouterSwitch>
       </div>
     )
   }

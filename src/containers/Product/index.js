@@ -2,7 +2,10 @@
  * @summary 产品
  */
 import React, { Component } from 'react'
+import { Switch as RouterSwitch, Route } from 'react-router-dom'
 
+import ProductItem from './components/ProductItem'
+import ProductAll from './components/ProductAll'
 import style from './style.css'
 
 class Product extends Component {
@@ -15,7 +18,10 @@ class Product extends Component {
   render() {
     return (
       <div className={style.wrapper}>
-        Product
+        <RouterSwitch>
+          <Route path="/product/item" component={ProductItem} exact />
+          <Route path="/product/all" component={ProductAll} exact />
+        </RouterSwitch>
       </div>
     )
   }

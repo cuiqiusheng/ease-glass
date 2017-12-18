@@ -12,10 +12,12 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '/dist'),
+    publicPath: '/',
     filename: 'bundle.js'
   },
   resolve: {
     alias: {
+      Src: path.join(__dirname, 'src'),
       Components: path.join(__dirname, 'src/components'),
       Containers: path.join(__dirname, 'src/containers'),
       Constants: path.join(__dirname, 'src/constants'),
