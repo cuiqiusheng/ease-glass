@@ -58,7 +58,9 @@ const prodPlugins = [
   }),
   new webpack.optimize.AggressiveMergingPlugin(),
   new HtmlWebpackPlugin({
-    template: 'src/index.html'
+    template: 'src/index.html',
+    hash: true,
+    filename: '../index.html'
   })
 ]
 

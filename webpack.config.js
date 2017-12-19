@@ -5,16 +5,25 @@ const loaders = require('./webpack-config/loaders')
 
 const __DEV__ = (process.env.NODE_ENV || 'development') === 'development'
 
+const devOutput = {
+  path: path.join(__dirname, '/dist'),
+  publicPath: '/',
+  filename: 'bundle.js'
+}
+
+const prodOutput = {
+  path: path.join(__dirname, '/dist/assets'),
+  publicPath: '/assets',
+  filename: '[name].js',
+  chunkFilename: '[name].[id].js'
+}
+
 module.exports = {
   devtool: 'eval-source-map',
   entry: {
     index: path.join(__dirname, '/src/index.js')
   },
-  output: {
-    path: path.join(__dirname, '/dist'),
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
+  output: __DEV__ ? devOutput : prodOutput,
   resolve: {
     alias: {
       Src: path.join(__dirname, 'src'),

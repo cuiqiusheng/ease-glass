@@ -1,11 +1,11 @@
 :global(.ant-menu-dark) {
-  background: #404040;
+  background: #404040 !important;
 }
 
 :global(.ant-menu-dark .ant-menu-sub) {
-  background: #404040;
+  background: #404040 !important;
 }
 
 :global(.ant-menu-dark .ant-menu-inline.ant-menu-sub) {
-  background: #333;
+  background: #333 !important;
 }

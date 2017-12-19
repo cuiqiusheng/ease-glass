@@ -4,10 +4,11 @@
   "description": "a middle-end management system.",
   "main": "src/index.js",
   "scripts": {
+    "build": "npm run clean && npm run webpack-prod",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist/*",
     "start": "webpack-dev-server --progress --color",
-    "build": "webpack --config ./webpack.config.js --progress"
+    "webpack-prod": "NODE_ENV=production webpack --config ./webpack.config.js --progress"
   },
   "author": "Tim",
   "license": "ISC",
