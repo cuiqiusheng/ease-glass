@@ -1,0 +1,17 @@
+name: egwebconsole
+
+images:
+  - name: glamering/egwebconsole
+    script: release/build-image.sh
+    registry: uhub.service.ucloud.cn
+
+deployments:
+  - environment: egwebconsole-beta
+    script: release/deploy.sh
+    name: egwebconsole-beta
+
+notification:
+  emails:
+    - g7tianyi@easeglass.com
+    - jindeng@easeglass.com
+    - renbin@easeglass.com
