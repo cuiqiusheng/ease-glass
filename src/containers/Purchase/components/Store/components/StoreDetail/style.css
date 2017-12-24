@@ -1,0 +1,25 @@
+.info-box {
+  margin-top: 20px;
+}
+
+.info-box > ul {
+  width: 405px;
+  font-size: 12px;
+}
+
+.info-box li {
+  height: 18px;
+}
+
+.info-box li > p {
+  display: inline-block;
+}
+
+.info-box li > p:nth-child(1) {
+  width: 125px;
+  font-weight: 500;
+}
+
+.table-wrapper {
+  padding: 0 20px;
+}

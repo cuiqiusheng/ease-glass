@@ -1,0 +1,16 @@
+/* 内容标题的全局样式 例：采购入库单中的 “采购入库单标题 + 按钮” */
+:global(.content-header > div:nth-child(1)) {
+  font-size: 24px;
+}
+
+:global(.content-header > div:nth-child(2)) {
+  font-size: 15px;
+}
+
+:global(.content-header button) {
+  margin-right: 14px;
+}
+
+:global(.content-header button:nth-last-child(1)) {
+  margin-right: 0;
+}

@@ -2,5 +2,6 @@
   float: left;
   width: 200px;
   height: calc(100% - 56px);
+  min-height: 520px;
   background: var(--color-nav-dark);
 }

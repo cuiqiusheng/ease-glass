@@ -15,6 +15,7 @@ import { createRoutes } from './routes'
 import enUS from './locale/en'
 import zhCN from './locale/zh'
 import './styles/base.css'
+import './styles/custom.css'
 import './styles/antRewrite.css'
 
 export const history = createHistory()

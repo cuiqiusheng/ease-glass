@@ -4,6 +4,7 @@
 import React, { Component } from 'react'
 import { Switch as RouterSwitch, Route } from 'react-router-dom'
 import { object } from 'prop-types'
+import classnames from 'classnames'
 
 import Header from 'Components/Header'
 import Nav from 'Components/Nav'
@@ -31,10 +32,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className={style.wrapperApp}>
+      <div className={classnames('appWrapper', style.appWrapper)}>
         <Header />
         <Nav />
-        <div className={style.wrapperContent}>
+        <div className={style.contentWrapper}>
           <RouterSwitch>
             <Route path="/pandect" component={Pandect} exact />
             <Route path="/product" component={Product} />

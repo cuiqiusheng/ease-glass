@@ -16,3 +16,50 @@
   width: calc(100% - 200px);
   border-bottom: 1px solid #E9E9E9;
 }
+
+.header-left-box {
+  position: relative;
+  width: 400px;
+}
+
+.header-left-box > div {
+  position: absolute;
+  cursor: pointer;
+  top: 13px;
+}
+
+.header-left-box > div:nth-child(1) {
+  left: 27px;
+  color: #108ee9;
+  font-size: 20px;
+}
+
+.header-left-box > div:nth-child(2) {
+  left: 69px;
+  font-size: 20px;
+}
+
+.header-left-box > div:nth-child(3) {
+  left: 112px;
+  top: 11px;
+}
+
+.header-right-box {
+  position: relative;
+  width: 200px;
+}
+
+.header-right-box > div {
+  position: absolute;
+  top: 13px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.header-right-box > div:nth-child(1) {
+  right: 70px;
+}
+
+.header-right-box > div:nth-child(2) {
+  right: 20px;
+}

@@ -9,3 +9,20 @@
 :global(.ant-menu-dark .ant-menu-inline.ant-menu-sub) {
   background: #333 !important;
 }
+
+:global(.ant-form-item-label label) {
+  color: #666 !important;
+  font-size: 12px !important;
+}
+
+:global(.ant-table-thead > tr > th) {
+  background: #F7F9FB !important;
+}
+
+:global(.ant-table-thead > tr > th) {
+  color: #8B9CAA !important;
+}
+
+:global(.ant-table) {
+  color: #666 !important;
+}
