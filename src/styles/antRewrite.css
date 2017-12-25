@@ -25,4 +25,9 @@
 
 :global(.ant-table) {
   color: #666 !important;
+  font-size: 12px !important;
+}
+
+:global(.ant-table-small) {
+  border: 0 !important;
 }

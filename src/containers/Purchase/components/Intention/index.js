@@ -62,7 +62,7 @@ class Intention extends Component {
         <div className={classnames('clearfix', 'content-header')}>
           <div className={classnames('fl')}>采购意向单</div>
           <div className={classnames('fr')}>
-            <Button type="primary"><Link to="/purchase/store/add">新增</Link></Button>
+            <Button type="primary"><Link to="/purchase/intention/add">新增</Link></Button>
             <Button>···</Button>
           </div>
         </div>
