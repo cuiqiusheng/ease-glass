@@ -59,15 +59,15 @@ class StoreDetail extends Component {
           <div className={classnames('clearfix', style['info-box'])}>
             <ul className={classnames('fl')}>
               <li><p>单据编号</p><p>PIN2347628346</p></li>
-              <li><p>供应商</p><p>PIN2347628346</p></li>
-              <li><p>采购类型</p><p>PIN2347628346</p></li>
-              <li><p>收入仓库</p><p>PIN2347628346</p></li>
-              <li><p>运单号</p><p>PIN2347628346</p></li>
+              <li><p>供应商</p><p>济南</p></li>
+              <li><p>采购类型</p><p>隐形眼镜</p></li>
+              <li><p>收入仓库</p><p>是</p></li>
+              <li><p>运单号</p><p>2347664329</p></li>
             </ul>
             <ul className={classnames('fl')}>
-              <li><p>制单人</p><p>PIN2347628346</p></li>
-              <li><p>单据日期</p><p>PIN2347628346</p></li>
-              <li><p>备注</p><p>PIN2347628346</p></li>
+              <li><p>制单人</p><p>黄旭</p></li>
+              <li><p>单据日期</p><p>2017-10-10</p></li>
+              <li><p>备注</p><p>无</p></li>
             </ul>
           </div>
         </div>

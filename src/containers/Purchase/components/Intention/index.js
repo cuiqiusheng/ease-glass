@@ -20,7 +20,7 @@ const columns = [
   {
     title: '采购意向单号',
     dataIndex: 'a',
-    render: text => <Link to={`/purchase/store/${text}`}>{text}</Link>
+    render: text => <Link to={`/purchase/intention/${text}`}>{text}</Link>
   },
   { title: '需求类型', dataIndex: 'b' },
   { title: '需求日期', dataIndex: 'c' },

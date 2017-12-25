@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import { Switch as RouterSwitch, Route } from 'react-router-dom'
 
 import Intention from './components/Intention'
+import IntentionDetail from './components/Intention/components/IntentionDetail'
 import Store from './components/Store'
 import StoreDetail from './components/Store/components/StoreDetail'
 import StoreAdd from './components/Store/components/StoreAdd'
@@ -22,6 +23,7 @@ class Purchase extends Component {
     return (
       <RouterSwitch>
         <Route path="/purchase/intention" component={Intention} exact />
+        <Route path="/purchase/intention/:id" component={IntentionDetail} exact />
         <Route path="/purchase/store" component={Store} exact />
         <Route path="/purchase/store/add" component={StoreAdd} exact />
         <Route path="/purchase/store/:id" component={StoreDetail} exact />
