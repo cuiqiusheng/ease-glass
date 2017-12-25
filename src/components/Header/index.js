@@ -19,9 +19,8 @@ class Header extends Component {
   /* eslint-disable no-console */
   render() {
     return (
-      <div className={classnames('clearfix', style.wrapper)}>
-        <div className={classnames('fl', style.logo)}>LOGO</div>
-        <div className={classnames('fl', 'clearfix', style.header)}>
+      <div className={style.wrapper}>
+        <div className={classnames('clearfix', style.header)}>
           <div className={classnames('fl', style['header-left-box'])}>
             <div><Icon type="plus-circle" /></div>
             <div><Icon type="clock-circle-o" /></div>

@@ -4,7 +4,7 @@
 import React, { Component } from 'react'
 import { Switch as RouterSwitch, Route } from 'react-router-dom'
 import { object } from 'prop-types'
-import classnames from 'classnames'
+import { Layout } from 'antd'
 
 import Header from 'Components/Header'
 import Nav from 'Components/Nav'
@@ -19,6 +19,8 @@ import Setting from 'Containers/Setting'
 
 import style from './style.css'
 
+const { Header: LayoutHeader, Sider: LayoutSider, Content: LayoutContent } = Layout
+
 const propTypes = {
   match: object.isRequired
 }
@@ -32,22 +34,28 @@ class App extends Component {
 
   render() {
     return (
-      <div className={classnames('appWrapper', style.appWrapper)}>
-        <Header />
-        <Nav />
-        <div className={style.contentWrapper}>
-          <RouterSwitch>
-            <Route path="/pandect" component={Pandect} exact />
-            <Route path="/product" component={Product} />
-            <Route path="/purchase" component={Purchase} />
-            <Route path="/sell" component={Sell} exact />
-            <Route path="/stock" component={Stock} />
-            <Route path="/client" component={Client} exact />
-            <Route path="/organize" component={Organize} exact />
-            <Route path="/setting" component={Setting} exact />
-          </RouterSwitch>
-        </div>
-      </div>
+      <Layout>
+        <LayoutSider className={style['layout-sider']}>
+          <Nav />
+        </LayoutSider>
+        <Layout className={style['layout-right']}>
+          <LayoutHeader className={style['layout-header']}>
+            <Header />
+          </LayoutHeader>
+          <LayoutContent className={style['layout-content']}>
+            <RouterSwitch>
+              <Route path="/pandect" component={Pandect} exact />
+              <Route path="/product" component={Product} />
+              <Route path="/purchase" component={Purchase} />
+              <Route path="/sell" component={Sell} exact />
+              <Route path="/stock" component={Stock} />
+              <Route path="/client" component={Client} exact />
+              <Route path="/organize" component={Organize} exact />
+              <Route path="/setting" component={Setting} exact />
+            </RouterSwitch>
+          </LayoutContent>
+        </Layout>
+      </Layout>
     )
   }
 }

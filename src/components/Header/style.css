@@ -3,17 +3,7 @@
   height: 56px;
 }
 
-.logo {
-  width: 200px;
-  background: var(--color-nav-dark);
-  text-align: center;
-  line-height: 56px;
-  color: #fff;
-  font-size: 24px;
-}
-
 .header {
-  width: calc(100% - 200px);
   border-bottom: 1px solid #E9E9E9;
 }
 
@@ -25,7 +15,7 @@
 .header-left-box > div {
   position: absolute;
   cursor: pointer;
-  top: 13px;
+  top: 0;
 }
 
 .header-left-box > div:nth-child(1) {
@@ -41,7 +31,7 @@
 
 .header-left-box > div:nth-child(3) {
   left: 112px;
-  top: 11px;
+  top: 0;
 }
 
 .header-right-box {
@@ -51,7 +41,7 @@
 
 .header-right-box > div {
   position: absolute;
-  top: 13px;
+  top: 0;
   cursor: pointer;
   font-size: 20px;
 }

@@ -45,8 +45,8 @@ class StoreDetail extends Component {
   render() {
     const { match } = this.props
     const { params: { id } } = match
-    return (
-      <div className={classnames(style.wrapper)}>
+    return [
+      <div className={classnames(style.wrapper)} key="1">
         <div className="p20">
           <div className={classnames('clearfix', 'content-header')}>
             <div className={classnames('fl')}>采购入库单 #{id}</div>
@@ -71,21 +71,19 @@ class StoreDetail extends Component {
             </ul>
           </div>
         </div>
+      </div>,
 
-        <div className="shim" />
-
-        <div className={style['table-wrapper']}>
-          <Tabs defaultActiveKey="1">
-            <TabPane tab="商品详情" key="1">
-              <Table className={style.table} columns={columns} dataSource={data} rowSelection={rowSelection} />
-            </TabPane>
-            <TabPane tab="商品调拨" key="2">
-              <Table className={style.table} columns={columns} dataSource={data} rowSelection={rowSelection} />
-            </TabPane>
-          </Tabs>
-        </div>
+      <div className={style['table-wrapper']} key="2">
+        <Tabs defaultActiveKey="1">
+          <TabPane tab="商品详情" key="1">
+            <Table className={style.table} columns={columns} dataSource={data} rowSelection={rowSelection} />
+          </TabPane>
+          <TabPane tab="商品调拨" key="2">
+            <Table className={style.table} columns={columns} dataSource={data} rowSelection={rowSelection} />
+          </TabPane>
+        </Tabs>
       </div>
-    )
+    ]
   }
 }
 

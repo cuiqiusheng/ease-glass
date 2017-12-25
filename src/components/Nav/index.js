@@ -21,6 +21,7 @@ class Nav extends Component {
   render() {
     return (
       <div className={style.wrapperNav}>
+        <div className={style.logo}>LOGO</div>
         <Menu
           defaultSelectedKeys={[ '1' ]}
           defaultOpenKeys={[ '' ]}

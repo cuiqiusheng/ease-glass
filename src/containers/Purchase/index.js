@@ -7,8 +7,9 @@ import { Switch as RouterSwitch, Route } from 'react-router-dom'
 import Intention from './components/Intention'
 import Store from './components/Store'
 import StoreDetail from './components/Store/components/StoreDetail'
+import StoreAdd from './components/Store/components/StoreAdd'
 import Order from './components/Order'
-import style from './style.css'
+// import style from './style.css'
 
 class Purchase extends Component {
 
@@ -19,14 +20,13 @@ class Purchase extends Component {
 
   render() {
     return (
-      <div className={style.wrapper}>
-        <RouterSwitch>
-          <Route path="/purchase/intention" component={Intention} exact />
-          <Route path="/purchase/store" component={Store} exact />
-          <Route path="/purchase/store/:id" component={StoreDetail} exact />
-          <Route path="/purchase/order" component={Order} exact />
-        </RouterSwitch>
-      </div>
+      <RouterSwitch>
+        <Route path="/purchase/intention" component={Intention} exact />
+        <Route path="/purchase/store" component={Store} exact />
+        <Route path="/purchase/store/add" component={StoreAdd} exact />
+        <Route path="/purchase/store/:id" component={StoreDetail} exact />
+        <Route path="/purchase/order" component={Order} exact />
+      </RouterSwitch>
     )
   }
 }
