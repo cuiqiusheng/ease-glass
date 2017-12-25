@@ -1,4 +1,4 @@
-# cloud-mirror FrontEnd
+# Cloud-Mirror FrontEnd
 > Don't panic!
 
 ## 运行环境
@@ -70,4 +70,4 @@
 ### 发布上线打包
 
 * 安装依赖: `npm install`
-* 便已打包: `npm run build`
+* 编译打包: `npm run build`
