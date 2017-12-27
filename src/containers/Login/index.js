@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react'
 
+import logo from './images/logo.svg'
 import style from './style.css'
 
 class Login extends Component {
@@ -15,7 +16,13 @@ class Login extends Component {
   render() {
     return (
       <div className={style.wrapper}>
-        Login
+        <div className={style['login-form-box']}>
+          <div className={style['logo-box']}>
+            <img src={logo} alt="" />
+            <div className={style.title}>云镜</div>
+            <p>用心做好镜</p>
+          </div>
+        </div>
       </div>
     )
   }
