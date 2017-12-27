@@ -41,3 +41,44 @@
 	font-size: 24px;
 	letter-spacing: 1.4px;
 }
+
+.bottom-box {
+  padding: 0 108px;
+  margin-top: 56px;
+}
+
+.verification-box {
+  margin-top: 38px;
+  margin-bottom: 46px;
+  white-space: nowrap;
+}
+
+.verification-box input {
+  width: 35px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 27px;
+  text-align: center;
+}
+
+.btn-box button {
+  width: 100%;
+  font-size: 24px;
+  height: 66px;
+}
+
+.tip-box {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.input-box input {
+  width: 65%;
+  height: 60px;
+}
+
+.input-box button {
+  width: 35%;
+  height: 60px;
+}
