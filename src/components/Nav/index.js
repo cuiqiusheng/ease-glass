@@ -57,7 +57,7 @@ class Nav extends Component {
         <div className={style.logo}>LOGO</div>
         <Menu
           mode="inline"
-          theme="dark"
+          // theme="dark"
           inlineCollapsed={this.state.collapsed}
           selectedKeys={[ this.state.selectedKeys ]}
           openKeys={this.state.openKeys}

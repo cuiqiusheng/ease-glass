@@ -3,14 +3,37 @@
   width: 200px;
   height: 100%;
   min-height: 520px;
-  background: var(--color-nav-dark);
+  background: var(--color-nav-light);
 }
 
 .logo {
   width: 200px;
-  background: var(--color-nav-dark);
+  height: 56px;
+  border: 1px solid #e5e6eb;
+  background: var(--color-nav-light);
   text-align: center;
   line-height: 56px;
-  color: #fff;
+  color: #999;
   font-size: 24px;
+}
+
+.wrapperNav :global(.ant-menu-inline) {
+  height: calc(100% - 56px) !important;
+}
+
+.wrapperNav :global(.ant-menu-inline > li) {
+  border-left: 3px solid #fff !important;
+}
+
+.wrapperNav :global(.ant-menu-inline .ant-menu-item-selected) {
+  background-color: #fff !important;
+  border-left: 3px solid #4279ff !important;
+}
+
+.wrapperNav :global(.ant-menu-inline .ant-menu-item) {
+  width: 100% !important;
+}
+
+.wrapperNav :global(.ant-menu-inline .ant-menu-submenu-title) {
+  width: 100% !important;
 }

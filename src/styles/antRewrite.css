@@ -31,3 +31,7 @@
 :global(.ant-table-small) {
   border: 0 !important;
 }
+
+:global(.ant-menu-inline .ant-menu-item:after) {
+  border-right: none !important;
+}
