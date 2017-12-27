@@ -4,6 +4,7 @@
 
 .form > div {
   width: 200px;
+  margin-bottom: 15px !important;
 }
 
 .form :global(.ant-col-24.ant-form-item-label) {
@@ -28,3 +29,6 @@
   margin-top: 20px;
 }
 
+.operate-item {
+  margin-left: 10px;
+}
