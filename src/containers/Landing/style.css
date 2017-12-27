@@ -1,0 +1,57 @@
+.wrapper {
+  color: #fff;
+}
+
+.header {
+  height: 76px;
+  line-height: 76px;
+  background-color: #32aede;
+	box-shadow: 0 2px 4px 0 #4a4a4a;
+}
+
+.header div {
+  height: 76px;
+}
+
+.nav > div {
+  display: inline-block;
+  margin-right: 90px;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.nav a:hover {
+  box-shadow: 0 0 3px 0 #fff;
+}
+
+.nav > div:nth-last-child(1) a {
+  padding: 8px 55px;
+	border-radius: 98px;
+	border: solid 1.3px #ffffff;
+}
+
+.part-one {
+  height: 937px;
+  margin-top: 2px;
+  background: #32AEDE url('./images/wave.svg') no-repeat bottom;
+}
+
+.part-two {
+  height: 791px;
+}
+
+.part-three {
+  height: 1969px;
+  background: url('./images/wave2.svg') no-repeat;
+}
+
+.part-four {
+  height: 1000px;
+}
+
+.part-five {
+  height: 464px;
+  background: url('./images/cloud.svg') no-repeat;
+}
