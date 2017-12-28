@@ -13,7 +13,8 @@ class Login extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isPhone: true
+      isPhone: true,
+      showPsw: false
     }
   }
 
@@ -41,8 +42,13 @@ class Login extends Component {
     this.setState({ isPhone: !isPhone })
   }
 
+  toggleShowPsw = () => {
+    const { showPsw } = this.state
+    this.setState({ showPsw: !showPsw })
+  }
+
   render() {
-    const { isPhone } = this.state
+    const { isPhone, showPsw } = this.state
     return (
       <div className={style.wrapper}>
         <div className={style['login-form-box']}>
@@ -81,7 +87,7 @@ class Login extends Component {
                 <div className={style['bottom-box']}>
                   <div className={classnames('clearfix', style['input-box-phone'], style['input-box-no-btn'])}>
                     <div className="fl">
-                      <div>电话号码</div>
+                      <div>用户名/电子邮箱</div>
                       <input type="text" />
                     </div>
                   </div>
@@ -89,9 +95,9 @@ class Login extends Component {
                   <div className={classnames('clearfix', style['input-box-phone'], style['input-box-email'])}>
                     <div className="fl">
                       <div>用户密码</div>
-                      <input type="text" />
+                      <input type={showPsw ? 'text' : 'password'} />
                     </div>
-                    <button className="fl">显示密码</button>
+                    <button className="fl" onClick={this.toggleShowPsw}>{showPsw ? '隐藏密码' : '显示密码'}</button>
                   </div>
 
                   <div className={style['btn-box']}><Button type="primary">提交</Button></div>
