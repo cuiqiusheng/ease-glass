@@ -59,6 +59,9 @@
   line-height: 60px;
   margin-right: 27px;
   text-align: center;
+  border: solid 1px #979797;
+  border-radius: 2px;
+  font-size: 40px;
 }
 
 .btn-box button {
@@ -73,9 +76,26 @@
   font-size: 17px;
 }
 
-.input-box input {
+.input-box > div {
   width: 65%;
   height: 60px;
+  padding: 3px;
+  padding-bottom: 0;
+  border: solid 1px #979797;
+  border-right: none;
+}
+
+.input-box div div {
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+}
+
+.input-box div input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 22px;
 }
 
 .input-box button {
