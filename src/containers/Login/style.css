@@ -74,9 +74,10 @@
   margin-top: 50px;
   text-align: center;
   font-size: 17px;
+  user-select: none;
 }
 
-.input-box > div {
+.input-box-phone > div {
   width: 65%;
   height: 60px;
   padding: 3px;
@@ -85,20 +86,41 @@
   border-right: none;
 }
 
-.input-box div div {
+.input-box-no-btn > div {
+  border: 0;
+}
+
+.input-box-phone.input-box-no-btn {
+  width: 100%;
+  border: solid 1px #979797;
+}
+
+.input-box-phone div div {
   width: 100%;
   height: 20px;
   font-size: 12px;
 }
 
-.input-box div input {
+.input-box-phone div input {
   width: 100%;
   border: 0;
   outline: none;
   font-size: 22px;
 }
 
-.input-box button {
+.input-box-phone button {
   width: 35%;
   height: 60px;
+}
+
+.input-box-email {
+  margin: 40px 0;
+}
+
+.input-box-email > div {
+  width: 78%;
+}
+
+.input-box-email button {
+  width: 22%;
 }
