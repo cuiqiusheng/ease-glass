@@ -1,4 +1,5 @@
 const path = require('path')
+// const proxy = require('http-proxy-middleware')
 
 const plugins = require('./webpack-config/plugins')
 const loaders = require('./webpack-config/loaders')
@@ -17,6 +18,8 @@ const prodOutput = {
   filename: '[name].js',
   chunkFilename: '[name].[id].js'
 }
+
+const proxyTarget = 'http://t.easeglass.com/'
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -40,7 +43,14 @@ module.exports = {
     inline: true,
     port: 5090,
     stats: 'errors-only',
-    open: true
+    open: true,
+    proxy: {
+      '/api': {
+        target: proxyTarget,
+        pathRewrite: { '^/api': '' },
+        changeOrigin: true
+      }
+    }
   },
   module: {
     rules: [

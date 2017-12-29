@@ -7,7 +7,11 @@ import classnames from 'classnames'
 import { object } from 'prop-types'
 import { Link } from 'react-router-dom'
 import _ from 'lodash'
+import { connect } from 'react-redux'
+import { httpGet } from 'Utils/commons'
+import apiMap from 'Constants/apiMap'
 
+// import * as actions from 'Containers/Purchase/actions'
 import style from './style.css'
 
 const { Item } = Form
@@ -75,6 +79,11 @@ class Intention extends Component {
     )
   }
 
+  /* eslint-disable */
+  componentDidMount() {
+    httpGet(apiMap.aaa, {}, console.log(), console.log())
+  }
+
   addFormItem = (item) => {
     const { extraFormItem } = this.state
     let has = false
@@ -93,6 +102,7 @@ class Intention extends Component {
   }
 
   render() {
+    console.log(this.props)
     const { getFieldDecorator } = this.props.form
     const { extraFormItem } = this.state
     const formItemLayout = {
@@ -211,4 +221,7 @@ class Intention extends Component {
 Intention.propTypes = propTypes
 
 const IntentionForm = Form.create()(Intention)
-export default IntentionForm
+const mapStateToProps = state => ({
+  purchase: state.purchase
+})
+export default connect(mapStateToProps)(IntentionForm)

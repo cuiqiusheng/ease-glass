@@ -1,7 +1,7 @@
 import * as at from 'Constants/actionTypes'
 
 const initialState = {
-  
+  test: {}
 }
 
 export default function someReducer(state = initialState, action) {

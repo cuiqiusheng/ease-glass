@@ -5,7 +5,7 @@ import Login from 'Containers/Login'
 export function createRoutes() {
   return [
     {
-      path: '/',
+      path: '/landing',
       component: Landing,
       exact: true
     },
@@ -15,7 +15,7 @@ export function createRoutes() {
       exact: true
     },
     {
-      path: '/home',
+      path: '/',
       component: App
       // exact: true
     }
